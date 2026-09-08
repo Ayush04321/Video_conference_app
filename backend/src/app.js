@@ -28,13 +28,13 @@ app.use("/api/v1/users", userRoutes);
 const start = async () => {
     try {
         const connectionDb = await mongoose.connect("mongodb+srv://0808ci231053ies_db_user:AyushZoom@cluster0.mlwfa10.mongodb.net/zoom_db?retryWrites=true&w=majority&appName=Cluster0");
-        console.log(`✅ DB Connected to: ${connectionDb.connection.name}`);
+        console.log(`DB Connected to: ${connectionDb.connection.name}`);
 
         server.listen(app.get("port"), () => {
-            console.log(`🚀 Server listening on port ${app.get("port")}`);
+            console.log(` Server listening on port ${app.get("port")}`);
         });
     } catch (err) {
-        console.log("❌ DB Connection Error:", err.message);
+        console.log(" DB Connection Error:", err.message);
     }
 };
 
