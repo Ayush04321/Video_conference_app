@@ -1,6 +1,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import io from "socket.io-client";
+import styles from "../styles/VideoMeet.module.css";
 import { Badge, IconButton, TextField, Button } from '@mui/material';
 import VideocamIcon from '@mui/icons-material/Videocam';
 import VideocamOffIcon from '@mui/icons-material/VideocamOff';
@@ -10,7 +11,7 @@ import MicOffIcon from '@mui/icons-material/MicOff';
 import ScreenShareIcon from '@mui/icons-material/ScreenShare';
 import StopScreenShareIcon from '@mui/icons-material/StopScreenShare';
 import ChatIcon from '@mui/icons-material/Chat';
-import styles from "../styles/videoMeet.module.css";
+
 import server from '../environment';
 
 const server_url = server;
